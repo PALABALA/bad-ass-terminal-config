@@ -1,5 +1,10 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+# export PATH=~/anaconda3/bin:$PATH
+. /Users/g/anaconda3/etc/profile.d/conda.sh
+conda activate base
+
+export PATH=$PATH:/usr/local/go/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/g/.oh-my-zsh
@@ -27,7 +32,7 @@ POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=''
 POWERLEVEL9K_MULTILINE_SECOND_PROMPT_PREFIX="%F{red} \Uf1d0 %f %F{yellow
 }❯ "
 
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs anaconda)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status history)
 
 # Set list of themes to load
@@ -82,7 +87,7 @@ DEFAULT_USER="g"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(sudo git history taskwarrior tmux tmuxinator zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(sudo git history taskwarrior tmux tmuxinator zsh-autosuggestions zsh-syntax-highlighting anaconda)
 
 source $ZSH/oh-my-zsh.sh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -115,4 +120,5 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Example aliases
 alias zshconfig="code ~/.zshrc"
 alias ohmyzsh="code ~/.oh-my-zsh"
+alias python='python3'
 # alias EDITOR=nvim
