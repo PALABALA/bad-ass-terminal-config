@@ -121,4 +121,12 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 alias zshconfig="code ~/.zshrc"
 alias ohmyzsh="code ~/.oh-my-zsh"
 alias python='python3'
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 # alias EDITOR=nvim
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /Users/g/Downloads/serverless-with-aws/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/g/Downloads/serverless-with-aws/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /Users/g/Downloads/serverless-with-aws/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/g/Downloads/serverless-with-aws/node_modules/tabtab/.completions/sls.zsh
