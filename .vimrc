@@ -14,6 +14,7 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'flazz/vim-colorschemes'
 call vundle#end()            " required
 
 filetype plugin indent on    " required
@@ -27,7 +28,7 @@ execute pathogen#infect()
 " theme
 " ----
 syntax on
-colorscheme wombat
+colorscheme molokai
 " ----
 " End theme
 
