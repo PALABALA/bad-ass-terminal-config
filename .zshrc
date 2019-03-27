@@ -1,14 +1,21 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-# export PATH=~/anaconda3/bin:$PATH
-. /Users/g/anaconda3/etc/profile.d/conda.sh
+export PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
+
+export PATH=~/anaconda3/bin:$PATH
+. ~/anaconda3/etc/profile.d/conda.sh
 conda activate base
 
 export PATH=$PATH:/usr/local/go/bin
+export PATH=/Library/Frameworks/Mono.framework/Versions/Current/bin/:${PATH}
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/g/.oh-my-zsh
 export TERM=screen-256color
+
+# Magic Leap mldb
+export PATH=/Users/g/MagicLeap/mlsdk/v0.19.0/VirtualDevice/bin:$PATH
+source /Users/g/MagicLeap/mlsdk/v0.19.0/envsetup.sh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -87,7 +94,7 @@ DEFAULT_USER="g"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(sudo git history taskwarrior tmux tmuxinator zsh-autosuggestions zsh-syntax-highlighting anaconda)
+plugins=(sudo git history taskwarrior tmux tmuxinator zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 # source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -123,6 +130,7 @@ alias ohmyzsh="code ~/.oh-my-zsh"
 alias python='python3'
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 # alias EDITOR=nvim
+alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
 
 # tabtab source for serverless package
 # uninstall by removing these lines or running `tabtab uninstall serverless`
