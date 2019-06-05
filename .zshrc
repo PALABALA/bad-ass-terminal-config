@@ -3,8 +3,8 @@
 export PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
 
 export PATH=~/anaconda3/bin:$PATH
-. ~/anaconda3/etc/profile.d/conda.sh
-conda activate base
+# . ~/anaconda3/etc/profile.d/conda.sh  # commented out by conda initialize
+# conda activate base  # commented out by conda initialize
 
 export PATH=$PATH:/usr/local/go/bin
 export PATH=/Library/Frameworks/Mono.framework/Versions/Current/bin/:${PATH}
@@ -14,8 +14,8 @@ export ZSH=/Users/g/.oh-my-zsh
 export TERM=screen-256color
 
 # Magic Leap mldb
-export PATH=/Users/g/MagicLeap/mlsdk/v0.19.0/VirtualDevice/bin:$PATH
-source /Users/g/MagicLeap/mlsdk/v0.19.0/envsetup.sh
+export PATH=/Users/g/MagicLeap/mlsdk/v0.20.0/VirtualDevice/bin:$PATH
+source /Users/g/MagicLeap/mlsdk/v0.20.0/envsetup.sh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -138,3 +138,18 @@ alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/co
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [[ -f /Users/g/Downloads/serverless-with-aws/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/g/Downloads/serverless-with-aws/node_modules/tabtab/.completions/sls.zsh
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+

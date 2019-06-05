@@ -21,6 +21,7 @@ https://iterm2colorschemes.com/
 
 * color schemes
     * https://github.com/flazz/vim-colorschemes
+    git clone https://github.com/flazz/vim-colorschemes.git ~/.vim/bundle/colorschemes
 
 * install Pathogen
   ```console
