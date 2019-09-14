@@ -1,3 +1,17 @@
+https://blogs.technet.microsoft.com/jessicadeen/linux/macos-ohmyzsh-tmux-vim-iterm2-powerlevel9k-badass-terminal/
+
+# brew install tmux
+
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# https://github.com/zsh-users/zsh-completions
+
+# https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
+
+# https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
+
+# powerlevel9k
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
 # tpm install
 https://github.com/tmux-plugins/tpm
