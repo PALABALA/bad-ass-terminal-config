@@ -13,10 +13,6 @@ export PATH=/Library/Frameworks/Mono.framework/Versions/Current/bin/:${PATH}
 export ZSH=/Users/g/.oh-my-zsh
 export TERM=screen-256color
 
-# Magic Leap mldb
-export PATH=/Users/g/MagicLeap/mlsdk/v0.20.0/VirtualDevice/bin:$PATH
-source /Users/g/MagicLeap/mlsdk/v0.20.0/envsetup.sh
-
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
