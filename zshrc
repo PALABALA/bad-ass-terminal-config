@@ -2,12 +2,15 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=/bin:/usr/bin:/usr/local/bin:${PATH}
 
-export PATH=~/anaconda3/bin:$PATH
+export PATH=/usr/local/anaconda3/bin:$PATH
 # . ~/anaconda3/etc/profile.d/conda.sh  # commented out by conda initialize
 # conda activate base  # commented out by conda initialize
 
 export PATH=$PATH:/usr/local/go/bin
 export PATH=/Library/Frameworks/Mono.framework/Versions/Current/bin/:${PATH}
+
+# homebrew make
+export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/g/.oh-my-zsh
@@ -136,16 +139,22 @@ alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/co
 [[ -f /Users/g/Downloads/serverless-with-aws/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/g/Downloads/serverless-with-aws/node_modules/tabtab/.completions/sls.zsh
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/usr/local/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/anaconda3/etc/profile.d/conda.sh"
+    if [ -f "/usr/local/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/usr/local/anaconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/anaconda3/bin:$PATH"
+        export PATH="/usr/local/anaconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+nvm use 16
 
